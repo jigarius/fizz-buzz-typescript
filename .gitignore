@@ -1,0 +1,6 @@
+# Jet Brains IDE file.
+.idea
+
+# Misc.
+node_modules
+dist
