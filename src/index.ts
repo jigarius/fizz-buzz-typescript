@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const program = require('commander');
+import program = require('commander');
 import FizzBuzz from './fizzbuzz';
 
 program
@@ -11,7 +11,7 @@ program
   })
   .action((limit: number): void => {
     try {
-      let result = FizzBuzz.processUpto(limit);
+      const result = FizzBuzz.processUpto(limit);
       console.log(result.join("\n") + "\n");
     }
     catch(e) {

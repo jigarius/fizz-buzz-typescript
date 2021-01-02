@@ -1,11 +1,11 @@
 class FizzBuzz {
-  static processNumber(number: number): string {
-    let result = new FizzBuzzNumber(number);
+  static processNumber(n: number): string {
+    const result = new FizzBuzzNumber(n);
     return result.toString();
   }
 
-  static processUpto(limit: number): Array<string> {
-    let result: Array<string> = [];
+  static processUpto(limit: number): string[] {
+    const result: string[] = [];
     for (let i: number = 1; i <= limit; i++) {
       result.push(FizzBuzz.processNumber(i));
     }
@@ -15,9 +15,9 @@ class FizzBuzz {
 
 // TODO: Is it possible to have FizzBuzz.Number instead?
 class FizzBuzzNumber {
-  constructor(readonly number: number) {
+  constructor(readonly n: number) {
     // TODO: Why doesn't Number.isInteger() work?
-    if (number % 1 !== 0) {
+    if (n % 1 !== 0) {
       throw Error('Number must be an integer.')
     }
   }
@@ -35,15 +35,15 @@ class FizzBuzzNumber {
       return 'buzz';
     }
 
-    return this.number.toString();
+    return this.n.toString();
   }
 
   private isFizz(): boolean {
-    return this.number % 3 == 0;
+    return this.n % 3 === 0;
   }
 
   private isBuzz(): boolean {
-    return this.number % 5 == 0;
+    return this.n % 5 === 0;
   }
 
   private isFizzBuzz(): boolean {
