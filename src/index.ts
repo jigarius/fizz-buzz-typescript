@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import program = require('commander');
 import FizzBuzz from './fizzbuzz';
 
