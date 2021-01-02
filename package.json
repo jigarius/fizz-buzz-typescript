@@ -1,0 +1,23 @@
+{
+  "name": "fizz-buzz",
+  "version": "1.0.0",
+  "description": "Fizz-buzz in Typescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jigarius/fizz-buzz-typescript.git"
+  },
+  "author": "Jigar Mehta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jigarius/fizz-buzz-typescript/issues"
+  },
+  "homepage": "https://github.com/jigarius/fizz-buzz-typescript#readme",
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}

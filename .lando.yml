@@ -1,0 +1,10 @@
+name: fizz-buzz-typescript
+services:
+  appserver:
+    type: node:12
+    ssl: false
+    command: tail -f /dev/null
+    globals: []
+tooling:
+  npm:
+    service: appserver
