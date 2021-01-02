@@ -6,5 +6,11 @@ services:
     command: tail -f /dev/null
     globals: []
 tooling:
+  fizzbuzz:
+    service: appserver
+    cmd: npm start
   npm:
     service: appserver
+  tslint:
+    service: appserver
+    cmd: tslint --project /app
