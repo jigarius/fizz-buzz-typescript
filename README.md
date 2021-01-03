@@ -24,5 +24,4 @@ example in a Docker container instead, you can do so with Lando.
   * Install Lando.
   * Clone this repository and `cd` into the directory.
   * Run `lando start`.
-  * Run `lando tsc` to generate `dist/*.js` files.
   * Run `lando fizzbuzz` with a numeric argument; `lando fizzbuzz 15`.

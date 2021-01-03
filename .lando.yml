@@ -4,7 +4,9 @@ services:
     type: node:12
     ssl: false
     command: tail -f /dev/null
-    globals: []
+    build:
+      - npm install
+      - npm run-script build
 tooling:
   fizzbuzz:
     service: appserver
