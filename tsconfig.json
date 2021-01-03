@@ -12,5 +12,8 @@
     "removeComments": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": [
+    "test/**/*.test.ts"
+  ]
 }
