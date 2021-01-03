@@ -1,5 +1,5 @@
 import program = require('commander');
-import FizzBuzz from './fizzbuzz';
+import FizzBuzz from './FizzBuzz';
 
 program
   .version('1.0.0')
