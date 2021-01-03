@@ -2,8 +2,8 @@
 class Integer {
   constructor(readonly n: number) {
     // TODO: Why doesn't Number.isInteger() work?
-    if (n % 1 !== 0) {
-      throw Error('Number must be an integer.')
+    if (n < 0 || n % 1 !== 0) {
+      throw Error('Number must be a positive integer.')
     }
   }
 
