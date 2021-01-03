@@ -1,4 +1,4 @@
-import { Integer as FizzBuzzInteger } from './FizzBuzz/Integer'
+import { Integer as FizzBuzzInteger } from './fizz-buzz/integer'
 
 class FizzBuzz {
   static processNumber(n: number): string {
