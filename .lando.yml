@@ -11,9 +11,11 @@ tooling:
     cmd: npm run-script fizzbuzz
   tsc:
     service: appserver
-    cmd: tsc
+    cmd: npx tsc
   npm:
+    service: appserver
+  npx:
     service: appserver
   tslint:
     service: appserver
-    cmd: tslint --project /app
+    cmd: npx tslint --project /app
