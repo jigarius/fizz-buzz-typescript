@@ -1,5 +1,5 @@
 // TODO: Is it possible to do FizzBuzz.Integer instead?
-export class Integer {
+class Integer {
   constructor(readonly n: number) {
     // TODO: Why doesn't Number.isInteger() work?
     if (n % 1 !== 0) {
@@ -35,3 +35,5 @@ export class Integer {
     return this.isFizz() && this.isBuzz();
   }
 }
+
+export default Integer;
