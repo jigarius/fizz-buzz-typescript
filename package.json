@@ -4,7 +4,8 @@
   "description": "Fizz-buzz in Typescript.",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "build": "tsc",
+    "fizzbuzz": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

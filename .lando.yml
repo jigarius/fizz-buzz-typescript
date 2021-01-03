@@ -8,7 +8,7 @@ services:
 tooling:
   fizzbuzz:
     service: appserver
-    cmd: node dist/index.ts
+    cmd: npm run-script fizzbuzz
   tsc:
     service: appserver
     cmd: tsc
