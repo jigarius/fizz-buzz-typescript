@@ -1,6 +1,6 @@
 name: fizz-buzz-typescript
 services:
-  appserver:
+  main:
     type: node:12
     ssl: false
     command: tail -f /dev/null
@@ -9,15 +9,18 @@ services:
       - npm run-script build
 tooling:
   fizzbuzz:
-    service: appserver
+    service: main
     cmd: npm run-script fizzbuzz
   tsc:
-    service: appserver
+    service: main
     cmd: npx tsc
   npm:
-    service: appserver
+    service: main
   npx:
-    service: appserver
-  tslint:
-    service: appserver
+    service: main
+  lint:
+    service: main
     cmd: npx tslint --project /app
+  test:
+    service: main
+    cmd: npm run test
