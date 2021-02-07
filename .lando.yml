@@ -23,4 +23,4 @@ tooling:
     cmd: npx tslint --project /app
   test:
     service: main
-    cmd: npm run test
+    cmd: npm run-script test
