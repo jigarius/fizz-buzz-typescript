@@ -2,7 +2,7 @@
 class Integer {
   constructor(readonly n: number) {
     // TODO: Why doesn't Number.isInteger() work?
-    if (n < 0 || n % 1 !== 0) {
+    if (n <= 0 || n % 1 !== 0) {
       throw Error('Number must be a positive integer.')
     }
   }
