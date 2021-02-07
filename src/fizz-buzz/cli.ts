@@ -9,7 +9,7 @@ CLI
   })
   .action((limit: number): void => {
     try {
-      const result = FizzBuzz.processUpto(limit);
+      const result = FizzBuzz.generate(limit);
       console.log(result.join("\n") + "\n");
     }
     catch(e) {
