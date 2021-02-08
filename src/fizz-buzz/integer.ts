@@ -8,19 +8,21 @@ class Integer {
   }
 
   toString(): string {
-    if (this.isFizzBuzz()) {
-      return 'fizzbuzz';
-    }
+    let result: string = '';
 
     if (this.isFizz()) {
-      return 'fizz';
+      result += 'fizz';
     }
 
     if (this.isBuzz()) {
-      return 'buzz';
+      result += 'buzz';
     }
 
-    return this.n.toString();
+    if (!result) {
+      result = this.n.toString();
+    }
+
+    return result;
   }
 
   private isFizz(): boolean {
@@ -29,10 +31,6 @@ class Integer {
 
   private isBuzz(): boolean {
     return this.n % 5 === 0;
-  }
-
-  private isFizzBuzz(): boolean {
-    return this.isFizz() && this.isBuzz();
   }
 }
 
