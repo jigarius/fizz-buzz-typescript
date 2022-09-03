@@ -1,7 +1,7 @@
-import FizzBuzz from '../../src/fizz-buzz/fizz-buzz';
+import Generator from '../../src/fizz-buzz/generator';
 const expect = require('chai').expect;
 
-describe('class fizz-buzz/fizz-buzz', () => {
+describe('class fizz-buzz/generator', () => {
   it('.generate() returns fizzbuzz from 1 to 15', () => {
     const expectation = [
       '1', '2', 'fizz',
@@ -11,6 +11,6 @@ describe('class fizz-buzz/fizz-buzz', () => {
       '13', '14', 'fizzbuzz'
     ];
 
-    expect(FizzBuzz.generate(15)).to.eql(expectation);
+    expect(Generator.generate(15)).to.eql(expectation);
   });
 });

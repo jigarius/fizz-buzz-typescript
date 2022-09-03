@@ -1,6 +1,6 @@
 import FizzBuzzInteger from './integer'
 
-class FizzBuzz {
+class Generator {
   static generate(limit: number): string[] {
     const result: string[] = [];
     for (let i: number = 1; i <= limit; i++) {
@@ -11,4 +11,4 @@ class FizzBuzz {
   }
 }
 
-export default FizzBuzz;
+export default Generator;

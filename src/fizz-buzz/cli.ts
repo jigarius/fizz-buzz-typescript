@@ -1,4 +1,4 @@
-import FizzBuzz from './fizz-buzz';
+import Generator from './generator';
 import CLI = require('commander');
 
 CLI
@@ -9,7 +9,7 @@ CLI
   })
   .action((limit: number): void => {
     try {
-      const result = FizzBuzz.generate(limit);
+      const result = Generator.generate(limit);
       console.log(result.join("\n") + "\n");
     }
     catch(e) {
