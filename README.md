@@ -37,7 +37,7 @@ fizzbuzz
 * Clone the repository and `cd` into the directory.
 * Run `npm install` to install node packages.
 * Run `tsc` to generate `dist/*.js` files.
-* Run `npm run-script fizzbuzz` with a numeric argument; `npm fizzbuzz 15`.
+* Run `npm run-script fizzbuzz` with a numeric argument; `npm run-script fizzbuzz 15`.
 
 ### Docker Compose
 
