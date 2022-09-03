@@ -37,12 +37,14 @@ fizzbuzz
 * Clone the repository and `cd` into the directory.
 * Run `npm install` to install node packages.
 * Run `tsc` to generate `dist/*.js` files.
-* Run `npm fizzbuzz` with a numeric argument; `npm fizzbuzz 15`.
+* Run `npm run-script fizzbuzz` with a numeric argument; `npm fizzbuzz 15`.
 
-### Lando
+### Docker Compose
 
-If you use Lando, you can run this project in a Docker container instead.
+To deploy the project on a dockerized environment,
 
 * Clone this repository and `cd` into the directory.
-* Run `lando start`.
-* Run `lando fizzbuzz` with a numeric argument; `lando fizzbuzz 15`.
+* Run `docker compose up -d`.
+* Run `make ssh`.
+
+Now you can run the application as mentioned in the _Usage_ section.
